@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function GameCard(){
     return(
         <div className={styles.gameCard}>
-            <Image src='/products/counter-strike.jpg' width={300} height={145} />
+            <Image className={styles.image} src='/products/counter-strike.jpg' width={300} height={145} />
             <div className={styles.info}>
                 <h3 className={styles.title}>Counter Strike: Global Offensive</h3>
                 <p className={styles.category}>Ação, Estratégia, Multijogador.</p>
