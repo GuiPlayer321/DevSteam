@@ -3,7 +3,7 @@ import {BsCart4} from 'react-icons/bs'
 import CartMenu from '@/components/cartMenu/cartMenu'
 import { useState } from 'react'
 
-export default function CartButton(){
+export default function CartButton({cart,onRemove}){
 
     const[open,setOpen] =useState(false);
 
@@ -14,7 +14,7 @@ export default function CartButton(){
                 size={40}
                 onClick={() => {setOpen(!open)}} //o ! nega o valor atual
             />
-            {open && <CartMenu/>/* essa chamada é pra quando tiver sempre true*/ }
+            {open && <CartMenu cart={cart} onRemove={onRemove}/>/* essa chamada é pra quando tiver sempre true*/ }
         </div>
     )
 }
