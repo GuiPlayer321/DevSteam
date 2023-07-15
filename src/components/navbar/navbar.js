@@ -1,7 +1,7 @@
 import styles from './navbar.module.css'
-import {BsCart4} from 'react-icons/bs'
 import Logo from '../logo/logo'
 import Input from '../form/input/input'
+import CartButton from '../form/cartButton/cartButton'
 
 export default function Navbar(){
     return(
@@ -11,7 +11,7 @@ export default function Navbar(){
             <div className={styles.search}> 
                 <Input type='text' placeholder='Buscar' fullWidth/>
             </div>
-            <BsCart4 size={40}/>
+            <CartButton/>
         </nav>
     )
 }
